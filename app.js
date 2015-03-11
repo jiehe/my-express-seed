@@ -13,15 +13,15 @@ var app = express();
 /**
  * view jade engine setup
   */
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+//app.set('views', path.join(__dirname, 'views'));
+//app.set('view engine', 'jade');
 
 /**
  * view ejs engine setup  ejs and html extends for spa
   */
-//app.engine('html', require('ejs').renderFile);
-//app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 /**
  * view dust engine setup
