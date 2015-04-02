@@ -6,12 +6,12 @@ var open = require('../api/open-api');
 /* GET home page. */
 router.get('/', function(req, res) {
 
-  //res.render('index', { title: 'Express' ,arr:[2,3,4,5,6]});
+  res.render('index', { title: 'Express' ,arr:[2,3,4,5,6]});
 
   /**
    * for render html(spa); need the html's extension
    */
-  res.render('index.html');
+  //res.render('index.html');
 });
 
 

@@ -17,20 +17,20 @@ var app = express();
 //app.set('view engine', 'jade');
 
 /**
- * view ejs engine setup  ejs and html extends for spa
+* view ejs engine setup  ejs and html extends for spa
   */
-app.engine('html', require('ejs').renderFile);
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+//app.engine('html', require('ejs').renderFile);
+//app.set('views', path.join(__dirname, 'views'));
+//app.set('view engine', 'ejs');
 
 /**
  * view dust engine setup
   */
-//app.engine('dust', require('express-dustjs').engine({
-//    useHelpers: true
-//}))
-//app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'dust');
+app.engine('dust', require('express-dustjs').engine({
+    useHelpers: true
+}))
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'dust');
 
 app.use(favicon());
 app.use(logger('dev'));
