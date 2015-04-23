@@ -11,5 +11,8 @@ dust {title}
 	<li>{.}</li>
 	{/arr}
 </ul>
+<div class="posts">
+	{content|s}
+</div>
 </body>
 </html>
