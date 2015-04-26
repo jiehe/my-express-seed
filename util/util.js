@@ -17,8 +17,8 @@ module.exports = {
                 var html = res.text;
                 var $ = cheerio.load(html);
                 var title = $('title').text();
-                var content = $('#wmd-preview').html();
-                fs.writeFile('public/article/'+title + '.html', $('#wmd-preview').html(), 'utf8', function() {});
+                var content = $('#editor-reader-full').html();
+                fs.writeFile('public/article/'+title + '.html', content, 'utf8', function() {});
                 callback(title, content);
             });
     }
