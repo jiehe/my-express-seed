@@ -18,6 +18,21 @@ router.get('/upload', function(req, res) {
 });
 router.post('/upload', open.uploadFile);
 
+/**
+ * 输入链接上传文章
+ */
+router.get('/upload/article', function(req, res) {
+  res.render('upload');
+});
+
+router.post('/upload/article', api.uploadArticle);
+
+/**
+ * 读取文章
+ */
+
+router.get('/article/:id', api.getArticle);
+
 
 
 module.exports = router;

@@ -1,0 +1,14 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>upload</title>
+</head>
+<body>
+
+<form method="post" action="article" style="max-width: 100%;text-align: center;margin:auto;">
+	<h1>{msg}</h1>
+	<input name="link"/>
+	<button type="submit">上传</button>
+</form>
+</body>
+</html>
