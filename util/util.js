@@ -18,15 +18,17 @@ module.exports = {
         var $ = cheerio.load(html);
         var title = $('title').text();
         var updateTime = $('.article-updated-date').text();
-        var content = $('#editor-reader-full').html();
+        var formatUpdateTime = updateTime.slice(0, updateTime.lastIndexOf('.'));
+        $('.article-updated-date').text(formatUpdateTime);
+        //var content = $('#editor-reader-full').html();
 
 
         var item = {
           "title": title.slice(0, title.lastIndexOf(' - ')),
           "url": targetUrl,
           "_id": targetUrl.slice(-5),
-          "content": content,
-          "updateTime": updateTime.slice(0, updateTime.lastIndexOf('.'))
+          //"content": content,
+          "updateTime": formatUpdateTime
         };
 
         //验证是不是id重复的文章
@@ -45,7 +47,7 @@ module.exports = {
             return;
           }
         })
-        fs.writeFile('public/article/' + item._id + '.html', content, 'utf8', function (err) {
+        fs.writeFile('public/tpl/article/' + item._id + '.html', content, 'utf8', function (err) {
           if (err) {
             throw new Error(err);
             return;

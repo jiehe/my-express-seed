@@ -4,10 +4,10 @@
 	<title>upload</title>
 </head>
 <body>
-
-<form method="post" action="article" style="max-width: 100%;text-align: center;margin:auto;">
+<form method="post" action="article" style="max-width: 100%;text-align: center;margin:200px auto;">
+<h1>读取文章链接上传</h1>
 	<h1>{msg}</h1>
-	<input name="link"/>
+	<input name="link" style="width:300px;margin-right:30px;margin-left: 118px;"/>
 	<button type="submit">上传</button>
 </form>
 </body>

@@ -1,0 +1,11 @@
+<div>
+    <h2 class="archive-title tag">{{archiveTitle}}</h2>
+    <div class="archives">
+        <section class="archive-item" ng-repeat="item in items">
+            <header>
+                <time>{{item.updateTime|dateFilter}}</time>
+                <h1 class="title"><a href="#/index/article/{{item.fileName}}">{{item.title}}</a></h1>
+            </header>
+        </section>
+    </div>
+</div>

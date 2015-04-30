@@ -1,0 +1,17 @@
+<div>
+    <div ui-view="header"></div>
+    <div id="content" class="inner">
+        <!--正文区域-->
+        <article id="wrapper">
+            <div ui-view="wrapper"></div>
+        </article>
+        <!--右边侧栏-->
+        <aside id="sidebar" class="f-r">
+            <div ui-view="tagCloud"></div>
+            <div ui-view="tagArticle"></div>
+        </aside>
+        <!--清除浮动-->
+        <div class="clearfix"></div>
+    </div>
+    <div ui-view="footer"></div>
+</div>

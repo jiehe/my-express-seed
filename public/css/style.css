@@ -1,0 +1,201 @@
+@charset "utf-8";
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.yh {
+  font-family: "microsoft yahei";
+}
+.col-blue {
+  color: #1BA1E2;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.bg-body {
+  background-color: #F9F9F5 ;
+}
+.bg-article {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+@font-face {
+  font-family: "iconfont";
+  src: url('../../iconfont/iconfont.eot');
+  /* IE9*/
+  src: url('../../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../iconfont/iconfont.woff') format('woff'), /* chromeã€firefox */ url('../../iconfont/iconfont.ttf') format('truetype'), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/ url('../../iconfont/iconfont.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  content: '\344c';
+  font-family: "iconfont" !important;
+  font-size: 36px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  margin-right: 5px;
+  color: #FF4400;
+}
+.red {
+  color: red;
+}
+body {
+  background-color: #F9F9F5 ;
+}
+div[ui-view="header"] {
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+}
+#header {
+  zoom: 1;
+  text-shadow: 0 0 1px #fff;
+  height: 52px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+#header .header-title {
+  color: #eee8d5;
+  text-shadow: #1ba1e2 1px 1px 0, #1ba1e2 -1px 1px 0, #1ba1e2 1px -1px 0, #1ba1e2 -1px -1px 0;
+  font-family: 'Press Start 2P', cursive, 'Microsoft YaHei', tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1;
+  transition: all 1.2s cubic-bezier(0.8, 0, 0.25, 1), top 0.5s 1.2s linear;
+  transform: rotateX(45deg);
+  position: relative;
+  cursor: pointer;
+  top: 0px;
+}
+#header .header-title:hover {
+  text-shadow: rgba(51, 51, 51, 0.7) 10px 10px 10px;
+  transform: rotateX(0deg);
+  color: #C40000;
+  top: 25px;
+}
+#header #main-nav {
+  line-height: 3.5em;
+  font-family: "microsoft yahei";
+}
+#header #main-nav > ul > li {
+  float: left;
+  margin-left: 30px;
+}
+#header #main-nav > ul > li > a {
+  line-height: 3.5em;
+  font-size: 1.2em;
+  color: #666;
+}
+#header #main-nav > ul > li > a:hover {
+  color: #1BA1E2;
+}
+#content {
+  font-family: "microsoft yahei";
+  color: #000;
+}
+#content #wrapper {
+  width: 600px;
+  float: left;
+  background-color: transparent;
+  padding: 20px 30px 15px 30px;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 1px 1px 3px #646464;
+}
+#content #wrapper .archives {
+  -webkit-column-gap: 12px;
+  -moz-column-gap: 12px;
+  -o-column-gap: 12px;
+  -ms-column-gap: 12px;
+  column-gap: 12px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  -ms-column-count: 3;
+  column-count: 3;
+}
+#content #wrapper .archives .title {
+  font-size: 14px;
+  color: #1ba1e2;
+}
+#content #wrapper .archives .archive-item {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  background: #fff;
+  padding: 10px;
+}
+#content #sidebar {
+  width: 270px;
+  line-height: 1.8em;
+}
+#content #sidebar .widget {
+  background-color: rgba(255, 255, 255, 0.86);
+  -webkit-border-radius: 1px 2px 3px #dddddd;
+  -moz-border-radius: 1px 2px 3px #dddddd;
+  border-radius: 1px 2px 3px #dddddd;
+  margin-bottom: 30px;
+  word-wrap: break-word;
+}
+#content #sidebar .widget .title {
+  padding: 15px 20px;
+  font-size: 1.3em;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+  margin: 0px;
+}
+#content #sidebar .widget .entry {
+  font-size: .9em;
+  padding: 15px 20px;
+}
+#content #sidebar #tagCloud {
+  margin: 15px 20px;
+  width: 190px;
+  height: 200px;
+}
+.inner {
+  width: 960px;
+  margin: 0px auto;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+::selection {
+  color: #fff;
+  background: #e84893;
+  text-shadow: none;
+}
+h1[data-anchor-id]:before {
+  content: '\344c';
+  font-family: "iconfont" !important;
+  font-size: 36px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  margin-right: 5px;
+  color: #FF4400;
+}
+a:visited {
+  color: #1ba1e2;
+}
+a:hover {
+  color: #ff00ff;
+}
+a:active {
+  color: #ff00ff;
+}
