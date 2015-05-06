@@ -23,7 +23,7 @@ module.exports = {
                 var updateTime = $('.article-updated-date').text();
                 var formatUpdateTime = updateTime.slice(0, updateTime.lastIndexOf('.'));
                 $('.article-updated-date').text(formatUpdateTime);
-                //var content = $('#editor-reader-full').html();
+                var content = $('#editor-reader-full').html();
 
 
                 var item = {

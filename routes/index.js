@@ -1,19 +1,16 @@
 var express = require('express');
 var router = express.Router();
+var app = require('../api/api');
 
 var open = require('../api/open-api');
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/', app.index);
 
-  //res.render('index', { title: 'Express' ,arr:[2,3,4,5,6]});
-
-  /**
-   * for render html(spa); need the html's extension
-   */
-  res.render('index.dust');
+router.get('/uploadArticle', function(req, res) {
+  res.render('upload');
 });
-
+router.post('/uploadArticle', app.uploadArticle);
 
 /**
  * 上传文件
