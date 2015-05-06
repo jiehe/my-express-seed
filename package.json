@@ -18,11 +18,14 @@
     "static-favicon": "~1.0.0"
   },
   "devDependencies": {
+    "bluebird": "^2.9.25",
+    "cheerio": "^0.19.0",
     "gulp": "^3.8.11",
     "gulp-imagemin": "^2.2.1",
     "gulp-less": "^3.0.3",
     "imagemin-jpegtran": "^4.1.0",
     "imagemin-pngquant": "^4.1.0",
-    "jshint": "^2.7.0"
+    "jshint": "^2.7.0",
+    "lodash": "^3.8.0"
   }
 }
