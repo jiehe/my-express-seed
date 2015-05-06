@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
   /**
    * for render html(spa); need the html's extension
    */
-  res.render('index.html');
+  res.render('index.dust');
 });
 
 
