@@ -14,11 +14,13 @@ var paths = {
         dist: "pulic/dist/images"
     },
     less:{
+        watchPath: "public/src/less/**/*.less",
         src: "public/src/less/*.less",
         dist: "public/dist/css"
     },
     js: {
-        src: "public/src/js/**/*.js",
+        watchPath: "public/src/js/**/*.js",
+        src: "public/src/js/*.js",
         dist: "public/dist/js"
     }
 }
@@ -45,17 +47,17 @@ gulp.task('less', function() {
         .pipe(gulp.dest(paths.less.dist))
 })
 gulp.task('watch-less', ['less'], function() {
-    gulp.watch(paths.less.src, ['less'])
+    gulp.watch(paths.less.watchPath, ['less'])
 })
 
 //js语法的监控和监控
 gulp.task('js', function() {
     gulp.src(paths.js.src)
-        .pipe(jshint())
+        //.pipe(jshint())
         .pipe(gulp.dest(paths.js.dist))
 })
 gulp.task('watch-js', ['js'], function() {
-    gulp.watch(paths.js.src, ['js'])
+    gulp.watch(paths.js.watchPath, ['js'])
 })
 
 //监控图片 ，样式， js

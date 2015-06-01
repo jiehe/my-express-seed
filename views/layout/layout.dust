@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>两岸程序猿声啼不住，白富美已过万重山</title>
+
+  <script src="/vendor/jquery/dist/jquery.js"></script>
+  <script src="/vendor/JQCloud/jqcloud/jqcloud-1.0.3.js"></script>
+  <script src="/vendor/lodash/lodash.js"></script>
+
+  <script src="/dist/js/main.js"></script>
+
+  <link rel="stylesheet" href="/vendor/animate/animate.css"/>
+  <link rel="stylesheet" href="/vendor/JQCloud/jqcloud/jqcloud.css"/>
+  <link rel="stylesheet" href="/dist/css/style.css"/>
+
+</head>
+<body>
+{>"partials/nav"/}
+
+<div class="container">
+<div class="row">
+  <div class="col-sm-9">
+    {+body /}
+  </div>
+  <div class="col-sm-3">
+    <div class="sidebar">
+      {>"partials/hotArticles"/}
+      {>"partials/tags"/}
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>

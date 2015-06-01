@@ -1,0 +1,30 @@
+{
+  "name": "my-express-seed",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jiehe/my-express-seed",
+  "authors": [
+    "lijiehe <combine.li@corp.globalmarket.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "angularjs": "~1.3.15",
+    "angular-ui-router": "~0.2.14",
+    "angular-bootstrap": "~0.12.1",
+    "LESS-CSS3": "https://github.com/jiehe/LESS-CSS3.git",
+    "animate": "https://github.com/jiehe/animate.css.git",
+    "JQCloud": "https://github.com/jiehe/JQCloud.git#~1.0.3"
+  },
+  "devDependencies": {
+    "JQCloud": "https://github.com/jiehe/JQCloud.git#~1.0.3",
+    "lodash": "~3.9.3"
+  }
+}

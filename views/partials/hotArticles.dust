@@ -1,0 +1,10 @@
+<div class="hotArticles">
+  <h1 class="title">最新文章</h1>
+  <div class="content">
+    <ol>
+      {#hotArticles}
+      <li><a title="{title}" href="/article/{_id}">{title}</a></li>
+      {/hotArticles}
+    </ol>
+  </div>
+</div>

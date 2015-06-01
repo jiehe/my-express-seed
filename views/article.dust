@@ -1,0 +1,9 @@
+{>"layout/layout" /}
+
+{<body}
+
+<div class="article-wrapper">
+  {content|s}
+</div>
+
+{/body}

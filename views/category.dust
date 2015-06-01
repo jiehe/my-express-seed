@@ -1,0 +1,36 @@
+{>"layout/layout" /}
+{<body}
+<div class="category-wrapper">
+	{#articles}
+	<div>
+		<h2>{year}</h2>
+		<ul>
+			{#articlesList}
+			<li>
+				<p>{month}月{date}日</p>
+				<p><a href="/article/{_id}">{title}</a></p>
+			</li>
+			{/articlesList}
+		</ul>
+	</div>
+	{/articles}
+
+	{#tag}
+	<div>
+		<h2>{tag}</h2>
+		<ul>
+			{#articlesList}
+			<li>
+				<p>{month}月{date}日</p>
+				<p><a href="/article/{_id}">{title}</a></p>
+			</li>
+			{/articlesList}
+		</ul>
+	</div>
+	{/tag}
+
+
+
+
+</div>
+{/body}
