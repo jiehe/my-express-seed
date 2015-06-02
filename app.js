@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var util = require('./util/utils')
 
 var app = express();
 
@@ -60,10 +61,15 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
     app.use(function(err, req, res, next) {
         res.status(err.status || 500);
-        res.render('error', {
+        var model =  {
             message: err.message,
             error: err
-        });
+        };
+        util.getHotArticles()
+            .then(function(articles) {
+                model.hotArticles = articles;
+                res.render('error',model);
+            })
     });
 }
 
@@ -71,10 +77,16 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
+    var model =  {
         message: err.message,
         error: {}
-    });
+    };
+    util.getHotArticles()
+        .then(function(articles) {
+            model.hotArticles = articles;
+            res.render('error',model);
+        })
+
 });
 
 

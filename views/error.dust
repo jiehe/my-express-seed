@@ -1,5 +1,5 @@
 {>"layout/layout" /}
+
+{<body}
 <h1>{message}</h1>
-<p>
-    {message}
-</p>
+{/body}
